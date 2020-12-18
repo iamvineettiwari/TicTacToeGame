@@ -33,7 +33,7 @@ const handleWinner = (winner, token) => {
             document.getElementById(`my-circle-${i}`).style.stroke = "green";
         }
     }
-    game_status.innerText = `${token} won the game !`;
+    game_status.innerText = `${(token === players.computer) ? 'Computer' : 'You'} won the game !`;
 }
 
 const handleDraw = () => {
